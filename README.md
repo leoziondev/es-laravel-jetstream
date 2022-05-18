@@ -40,5 +40,10 @@ Configurar Stack a ser usada e habilitando teams
 php artisan jetstream:install livewire --teams
 ```
 
+Publicar views do Jetstream
+```
+php artisan vendor:publish --tag=jetstream-views
+```
+
 ## Documentações
 - [Laravel Jetstream](https://jetstream.laravel.com/2.x/introduction.html)
