@@ -45,6 +45,12 @@ Publicar views do Jetstream
 php artisan vendor:publish --tag=jetstream-views
 ```
 
+Criar link de storage em public para acessso as imagens
+```
+php artisan storage:link
+```
+
+
 ### Autenticação Customizada
 Caso seja necessário personalizar algumas opções de autenticação basta ir em app/config/fortify.php 
 
