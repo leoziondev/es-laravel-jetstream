@@ -45,5 +45,16 @@ Publicar views do Jetstream
 php artisan vendor:publish --tag=jetstream-views
 ```
 
+### Autenticação Customizada
+Caso seja necessário personalizar algumas opções de autenticação basta ir em app/config/fortify.php 
+
+Em __features__ você pode comentar __Features::registration()__ caso sua aplicação não tenha cadastro entre outras opções.
+
+__Mudar redirecionamento de view após o login__<br>
+'home' => RouteServiceProvider::HOME
+
+O RouteServiceProvider é quem gerencia a view, pode-se tanto criar uma nova constante como alterar a view de home
+
+
 ## Documentações
 - [Laravel Jetstream](https://jetstream.laravel.com/2.x/introduction.html)
