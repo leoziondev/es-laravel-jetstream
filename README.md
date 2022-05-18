@@ -35,5 +35,10 @@ Laravel Jetstream
 composer require laravel/jetstream
 ```
 
+Configurar Stack a ser usada e habilitando teams
+```
+php artisan jetstream:install livewire --teams
+```
+
 ## Documentações
 - [Laravel Jetstream](https://jetstream.laravel.com/2.x/introduction.html)
