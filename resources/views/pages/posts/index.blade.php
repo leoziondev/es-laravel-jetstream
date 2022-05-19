@@ -32,12 +32,14 @@
                                         <a href="#" class="bg-gray-50 text-gray-400 transition-all hover:bg-indigo-100 hover:text-indigo-500 py-1 px-2 rounded-md shadow">
                                             <i class="fa-solid fa-pen-to-square"></i>
                                         </a>
-                                        <form action="#" method="POST">
+                                        @canTeamPermission('delete')
+                                            <form action="#" method="POST">
 
-                                            <button class="bg-gray-50 text-gray-400 transition-all hover:bg-red-100 hover:text-red-500 py-1 px-2 rounded-md shadow">
-                                                <i class="fa-solid fa-trash-can"></i>
-                                            </button>
-                                        </form>
+                                                <button class="bg-gray-50 text-gray-400 transition-all hover:bg-red-100 hover:text-red-500 py-1 px-2 rounded-md shadow">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </form>
+                                        @endcanTeamPermission
                                     </div>
                                 </td>
                             </tr>
